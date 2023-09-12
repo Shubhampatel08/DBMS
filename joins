@@ -1,0 +1,39 @@
+------------------PART-A---------------------
+------------------JOINS----------------------
+	CREATE TABLE student1
+	(
+	  rno int,
+	  name varchar(30),
+	  branch varchar(30)
+	)
+
+	CREATE TABLE result1
+	(
+	  rno int,
+	  spi decimal(8,2)
+	)
+
+	CREATE TABLE Employe
+	(
+	  empno int,
+	  name varchar(30),
+	  managernNo int
+	)
+
+	select * from student1
+	
+	select * from result1
+
+	select * from Employe
+
+	--qury-1---
+	select * from student1
+	cross join result1
+
+	--qury-2---
+	select * from student1,result1
+	where student1.rno=result1.rno
+
+	--qury-3---
+	select * from student1,result1
+	where 
